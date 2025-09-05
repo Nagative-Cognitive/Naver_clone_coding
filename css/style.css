@@ -7,3 +7,21 @@
 .wrap {
   min-width: 1340px;
 }
+
+
+.header .menu-link {
+  
+}
+
+.header .menu-link .menu-item {
+
+}
+
+#hello::before {
+  content: "a";
+  background-color: yellow;
+}
+
+#hello::after {
+  content: "b"
+}
