@@ -1,0 +1,9 @@
+@import "./common.css";
+@import "./header.css";
+@import "./aside.css";
+@import "./main.css";
+@import "./footer.css";
+
+.wrap {
+  min-width: 1340px;
+}
