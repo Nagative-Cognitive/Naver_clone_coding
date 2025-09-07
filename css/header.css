@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-.header__menu-link {
+.header-menu {
   position: absolute;
   display: block;
   width: 32px;
@@ -15,30 +15,29 @@
   background-repeat: no-repeat;
 }
 
-.header__menu-link--01 {
+#hamburger {
   background-position: -326px -161px;
   top: 5px;
 }
-
-.header__menu-link--02 {
+#naverpay {
   background-position: -285px -41px;
   top: 5px;
   left: 41px;
 }
 
-.header__menu-link--03 {
+#navertalk {
   background-position: -285px -173px;
   top: 5px;
   right: 104px;
 }
 
-.header__menu-link--04 {
+#alram {
   background-position: -326px -227px;
   top: 5px;
   right: 52px;
 }
 
-.header__menu-link--05 {
+#shoppingcart {
   background-position: -285px -107px;
   top: 5px;
   right: 0px;
