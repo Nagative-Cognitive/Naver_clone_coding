@@ -1,12 +1,11 @@
 #searcharea {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
   z-index: -10;
   overflow: hidden;
   height: 215px;
-  background-color: yellow;
 }
 .topshortcut1 {
   display: flex;
@@ -93,10 +92,15 @@
   top: 12px;
 }
 #searchbar {
-  width: 500px;
+  width: 706px;
   height: 50px;
-  border: none;
+  top: 52px;
+  border: 1px solid #03c75a;
+  left: 25%;
+  border-radius: 33px;
+  background-color: #fff;
   position: absolute;
+  text-align: left;
 }
 .logoandsearch .searchtap .inputtool {
   margin-left: 10px;
@@ -135,6 +139,8 @@
   flex-direction: row;
   width: 660px;
   margin: auto;
+  position: relative;
+  top: 45%;
 }
 .shortcuticonwrap > div {
   width: 44px;
