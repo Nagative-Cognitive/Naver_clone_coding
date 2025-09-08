@@ -7,103 +7,48 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="hello">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-    </div>
     <div class="wrap">
       <!-- 머리 -->
-      <header class="header">
-        <div class="header-menu">
-          <a id="hamburger" href="#">햄버거메뉴</a>
-          <a id="naverpay" href="#">네이버 페이</a>
-          <a id="navertalk" href="#">네이버 톡</a>
-          <a id="alram" href="#">알람</a>
-          <a id="shoppingcart" href="#">쇼핑카트</a>
-        </div>
-        <div class="search-wrap">
-          <div class="search-bar">
-            <div class="search-logo-img-box">
-              <img alt="" class="search-logo-img" />
+        <div id="searcharea">
+            <div class="topshortcut1">
+                <div class="shortcut"></div>
+                <div class="naverpay"></div>
+            </div> 
+                <div class="topshortcut2">
+                  <div class="navertalk"></div>
+                    <div class="notificationandbenefit"></div>
+                </div>
+                
+                <div class="logo-search">
+                    <div class="naverlogo">NAVER</div>
+                    <div class="searchtap">
+                        <div class="nlogo"></div>
+
+                        <input type="text" 
+                               id="searchbar"       
+                               placeholder="검색어를 입력해주세요." >
+
+                        <div class="inputtool"></div>
+                        <div class="moretap"></div>
+                        <div class="searchbutton"></div>
+                    </div>
+                </div>
+                <!-- 검색바 하단 아이콘 -->
+                <div class="shortcuticonwrap">
+                    <div id="sc-mail"><span>메일</span></div>
+                    <div id="sc-cafe"><span>카페</span></div>
+                    <div id="sc-blog"><span>블로그</span></div>
+                    <div id="sc-shopping"><span>쇼핑</span></div>
+                    <div id="sc-news"><span>뉴스</span></div>
+                    <div id="sc-stock"><span>증권</span></div>
+                    <div id="sc-home"><span>부동산</span></div>
+                    <div id="sc-map"><span>지도</span></div>
+                    <div id="sc-webtoon"><span>웹툰</span></div>
+                    <div id="sc-etc"><span>뭐시깽이</span></div>
+                </div>
             </div>
-            <div class="search-box">
-              <div class="search-keyboard-btn"></div>
-              <div class="search-tr-btn"></div>
-            </div>
-            <div class="search-btn">
-              <img alt="" class="search-btn-img" />
-            </div>
-          </div>
-          <ul class="shortcut-list">
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--01"></span>
-                <span class="shorcut-text">메일</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--02"></span>
-                <span class="shorcut-text">카페</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--03"></span>
-                <span class="shorcut-text">블로그</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--04"></span>
-                <span class="shorcut-text">쇼핑</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--05"></span>
-                <span class="shorcut-text">뉴스</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--06"></span>
-                <span class="shorcut-text">증권</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--07"></span>
-                <span class="shorcut-text">부동산</span>
-              </a>
-            </li>
-            <li class="shorcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--08"></span>
-                <span class="shorcut-text">지도</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--09"></span>
-                <span class="shorcut-text">웹툰</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--10"></span>
-                <span class="shorcut-text">치지직</span>
-              </a>
-            </li>
-            <li class="shortcut-item">
-              <a class="shortcut-link" href="#">
-                <span class="shorcut-icon shorcut-icon--11"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
+        </div> 
+   
       <!-- 메인 -->
       <main class="main">
         <section class="section">
