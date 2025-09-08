@@ -142,64 +142,63 @@
   position: relative;
   top: 45%;
 }
-.shortcuticonwrap > div {
-  width: 44px;
-  height: 44px;
+
+/* ---- 각 아이콘별 이미지 지정 ---- */
+.shortcuticonwrap > a {
+  background-size: 468px 456px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.dfa24248.png);
+  background-repeat: no-repeat;
   border: 1px solid #eeeff0;
   border-radius: 18px;
   margin: 10px;
   text-align: center;
+  width: 40px;
+  height: 40px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  z-index: 10;
+  position: relative;
 }
 
-/* ---- 각 아이콘별 이미지 지정 ---- */
-.shortcuticonwrap > div {
-  background-size: 433px 412px;
+.shortcuticonwrap > a span {
+  pointer-events: none;
 }
 
 #sc-0 {
-  background-image: url();
-  background-position: -250px -90px;
+  background-position: -205px -219px;
 }
 #sc-1 {
-  background-image: url();
-  background-position: -250px 0;
+  background-position: -41px -219px;
 }
 #sc-2 {
-  background-image: url();
-  background-position: -201px -98px;
+  background-position: 0px -219px;
 }
 #sc-3 {
-  background-image: url();
-  background-position: -90px -209px;
+  background-position: -41px -260px;
 }
 #sc-4 {
-  background-image: url();
-  background-position: 0 -209px;
+  background-position: -270px -205px;
 }
 #sc-5 {
-  background-image: url();
-  background-position: -180px -209px;
+  background-position: -123px -260px;
 }
 #sc-6 {
-  background-image: url();
-  background-position: -45px -209px;
+  background-position: 0px -260px;
 }
 #sc-7 {
-  background-image: url();
-  background-position: -201px 0;
+  background-position: -270px 0px;
 }
 #sc-8 {
-  background-image: url();
-  background-position: -225px -209px;
+  background-position: -164px -260px;
 }
 #sc-9 {
-  background-image: url();
-  background-position: -250px -135px;
+  background-position: -270px -123px;
 }
 
 /* ---- 각 아이콘별 이미지 지정 ---- */
 
-.shortcuticonwrap > div > span {
+.shortcuticonwrap > a > span {
   position: relative;
   left: 0;
   top: 50px;
