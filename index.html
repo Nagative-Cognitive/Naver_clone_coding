@@ -33,19 +33,10 @@
                         <div class="searchbutton"></div>
                     </div>
                 </div>
+                
+                
                 <!-- 검색바 하단 아이콘 -->
-                <div class="shortcuticonwrap">
-                    <div id="sc-mail"><span>메일</span></div>
-                    <div id="sc-cafe"><span>카페</span></div>
-                    <div id="sc-blog"><span>블로그</span></div>
-                    <div id="sc-shopping"><span>쇼핑</span></div>
-                    <div id="sc-news"><span>뉴스</span></div>
-                    <div id="sc-stock"><span>증권</span></div>
-                    <div id="sc-home"><span>부동산</span></div>
-                    <div id="sc-map"><span>지도</span></div>
-                    <div id="sc-webtoon"><span>웹툰</span></div>
-                    <div id="sc-etc"><span>뭐시깽이</span></div>
-                </div>
+                <div class="shortcuticonwrap"></div>
             </div>
         </div> 
    
@@ -960,3 +951,15 @@
     <script crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script>
+                  const menus = ["메일", "카페", "블로그", "쇼핑", "뉴스", "증권", "부동산", "지도", "웹툰", "뭐시깽이"];
+                  const container = document.querySelector(".shortcuticonwrap");
+                  menus.forEach((name, index) => {
+                       const div = document.createElement("div");
+                       div.id = `sc-${index}`;
+                       const span = document.createElement("span");
+                       span.textContent = name;
+                       div.appendChild(span);
+                       container.appendChild(div);});
+                </script>

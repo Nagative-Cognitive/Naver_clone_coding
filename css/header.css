@@ -152,56 +152,51 @@
 }
 
 /* ---- 각 아이콘별 이미지 지정 ---- */
-#sc-mail {
+.shortcuticonwrap > div {
   background-size: 433px 412px;
+}
+
+#sc-0 {
   background-image: url();
   background-position: -250px -90px;
 }
-#sc-cafe {
-  background-size: 433px 412px;
+#sc-1 {
   background-image: url();
   background-position: -250px 0;
 }
-#sc-blog {
-  background-size: 433px 412px;
+#sc-2 {
   background-image: url();
   background-position: -201px -98px;
 }
-#sc-shopping {
-  background-size: 433px 412px;
+#sc-3 {
   background-image: url();
   background-position: -90px -209px;
 }
-#sc-news {
-  background-size: 433px 412px;
+#sc-4 {
   background-image: url();
   background-position: 0 -209px;
 }
-#sc-stock {
-  background-size: 433px 412px;
+#sc-5 {
   background-image: url();
   background-position: -180px -209px;
 }
-#sc-home {
-  background-size: 433px 412px;
+#sc-6 {
   background-image: url();
   background-position: -45px -209px;
 }
-#sc-map {
-  background-size: 433px 412px;
+#sc-7 {
   background-image: url();
   background-position: -201px 0;
 }
-#sc-webtoon {
-  background-size: 433px 412px;
+#sc-8 {
   background-image: url();
   background-position: -225px -209px;
 }
-#sc-etc {
-  background-size: 433px 412px;
+#sc-9 {
   background-image: url();
   background-position: -250px -135px;
 }
+
 /* ---- 각 아이콘별 이미지 지정 ---- */
 
 .shortcuticonwrap > div > span {
