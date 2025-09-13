@@ -3,7 +3,6 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: -10;
   overflow: hidden;
   height: 215px;
 }
@@ -17,28 +16,24 @@
   width: 36px;
   height: 36px;
   background-size: 433px 412px;
-  background-image: url();
   background-position: -330px -76px;
 }
 .naverpay {
   width: 36px;
   height: 36px;
   background-size: 433px 412px;
-  background-image: url();
   background-position: -293px -175px;
 }
 .navertalk {
   width: 28px;
   height: 28px;
   background-size: 433px 412px;
-  background-image: url();
   background-position: -334px -188px;
 }
 .notificationandbenefit {
   width: 28px;
   height: 28px;
   background-size: 433px 412px;
-  background-image: url();
   background-position: -334px -134px;
 }
 
@@ -86,7 +81,7 @@
   width: 30px;
   height: 30px;
   background-size: 433px 412px;
-  background-image: url();
+
   background-position: -360px -147px;
   position: relative;
   top: 12px;
@@ -107,7 +102,7 @@
   width: 26px;
   height: 18px;
   background-size: 433px 412px;
-  background-image: url();
+
   background-position: -228px -252px;
   position: relative;
   top: 17px;
@@ -118,7 +113,7 @@
   width: 11px;
   height: 11px;
   background-size: 433px 412px;
-  background-image: url();
+
   background-position: -133px -197px;
   position: relative;
   top: 20px;
@@ -128,7 +123,7 @@
   width: 27px;
   height: 24px;
   background-size: 433px 412px;
-  background-image: url();
+
   background-position: -332px -293px;
   position: relative;
   top: 12px;
@@ -158,11 +153,6 @@
   text-decoration: none;
   display: inline-block;
   z-index: 10;
-  position: relative;
-}
-
-.shortcuticonwrap > a span {
-  pointer-events: none;
 }
 
 #sc-0 {

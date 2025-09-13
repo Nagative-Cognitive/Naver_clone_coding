@@ -1,4 +1,11 @@
-.main__section-box {
+a {
+  text-decoration: none;
+  user-select: none;
+  outline: none;
+  color: black;
+  display: inline-block;
+}
+.main-box {
   margin-bottom: 15px;
   width: 830px;
   display: block;
@@ -7,21 +14,21 @@
   box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
 }
 
-.main__section-ad-box {
+.main-ad-box {
   height: 130px;
 }
 
-.main__section-ad-img {
+.ad-img {
   width: 830px;
   height: 130px;
   border-radius: 8px;
 }
 
-.main__section-news-box {
+.main-news-box {
   height: 426px;
 }
 
-.main__section-category {
+.main-category {
   display: flex;
   align-items: center;
   width: 830px;
@@ -30,26 +37,15 @@
   box-sizing: border-box;
 }
 
-.main__section-name {
-  margin: 0 13px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #838383;
-  text-decoration: none;
-}
-
-.main__section-name--black {
-  color: black;
-}
-
-.main__section-bar--circle {
+#se-circle {
   width: 4px;
   height: 4px;
   background-color: #d3d5d7;
   border-radius: 50%;
+  margin: 3px 3px;
 }
 
-.main__section-bar {
+.se-bar {
   display: block;
   width: 1px;
   height: 15px;
@@ -57,11 +53,11 @@
   transform: skewX(-15deg);
 }
 
-.main__section-name--sports {
+#sports {
   margin-right: 5px;
 }
 
-.main__section-news-sports-box {
+.sports-box {
   display: flex;
   align-items: center;
   margin-right: 13px;
@@ -77,7 +73,7 @@
   box-sizing: border-box;
 }
 
-.main__section-news-sports-icon {
+.sports-icon {
   background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
   background-size: 442px 434px;
   background-position: -310px -288px;
@@ -86,7 +82,7 @@
   height: 10px;
 }
 
-.main__section-info-box {
+.info-box {
   display: flex;
   align-items: center;
   width: 790px;
@@ -99,19 +95,15 @@
   font-size: 15px;
 }
 
-.main__section-info-bar--circle {
-  margin: 0 6px;
-  width: 4px;
-  height: 4px;
-  background-color: #d3d5d7;
-  border-radius: 50%;
-}
-
-.main__section-news-info-all {
+.info-content:first-child {
   margin-right: 5px;
 }
 
-.main__section-news-info-all-bar {
+.info-box #se-circle {
+  margin: 5px 5px;
+}
+
+.info-box .se-bar {
   background-color: #d3d5d7;
   width: 1px;
   height: 12px;
@@ -122,48 +114,41 @@
   margin-right: 25px;
 }
 
-.main__section-news-info-home {
-  font-weight: bold;
-}
-
-.main__section-news-brand-box {
+.news-box {
   width: 790px;
   height: 224px;
-  margin: 18px 20px 18px 20px;
+  margin: 18px 20px;
+  display: block;
 }
 
-.main__section-news-brand-list {
-  display: flex;
+.news-list {
   border-bottom: 1px solid #e3e5e8;
   width: 790px;
+  max-width: 790px;
   box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
+  /* 자동으로 줄바꿈 */
+  flex-wrap: wrap;
 }
 
-.main__section-news-brand-list--last {
-  border: none;
-}
-
-.main__section-news-item {
+.main-news-item {
   display: flex;
   justify-content: center;
   padding: 18px 0;
-  border-right: 1px solid #e3e5e8;
-  width: 132px;
+  border: 1px solid #e3e5e8;
+  width: 127px;
   height: 56px;
   box-sizing: border-box;
 }
 
-.main__section-news-item--last {
-  border: none;
-}
-
-.main__section-news-img {
+.main-news-image {
   width: 60px;
   height: 20px;
   object-fit: contain;
 }
 
-.main__section-more-box {
+.carousel {
   display: flex;
   justify-content: center;
   padding: 10px 0 11px;
@@ -173,7 +158,7 @@
   box-sizing: border-box;
 }
 
-.main__section-more-btn {
+.carousel-indicator {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,70 +171,60 @@
   margin: 0 40px;
 }
 
-.main__section-more-btn i {
+.carousel-indicator i {
   color: #2a2c2f;
 }
 
-.main__section-more-des-box {
+.carousel-box {
   display: flex;
   align-items: center;
 }
 
-.main__section-more-des {
+.carousel-content {
   font-size: 13px;
   margin: 0 2px;
   font-weight: bold;
-  color: #3a67ea;
 }
 
-.main__section-more-des--gray {
-  color: #606060;
+.carousel-content #highright {
+  color: blue;
 }
 
-.main__section-shop-box {
+.carousel-content #highright2 {
+  color: rgb(255, 119, 255);
+}
+
+.shopping {
   height: 560px;
 }
 
-.main__section-name--small {
-  font-size: 15px;
+.main-title {
+  margin: 0 13px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #838383;
+  text-decoration: none;
 }
 
-.main__section-name-life {
+.main-title-small {
+  margin: 0 13px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #838383;
+  text-decoration: none;
+  font-size: 15px;
   display: flex;
   align-items: center;
 }
 
-.main__section-info-bar--circle--small {
-  margin: 0;
-}
-
-.main__section-info-bar--circle--life {
-  margin: 0 1px;
-  background-color: #838383;
-}
-
-.main__secition-notice-img-box {
-  width: 13px;
-  height: 14px;
-}
-
-.main__section-notice-img {
-  width: 100%;
-  height: 100%;
-  background-image: url(../assets/sp_main.05384be4.png);
-  background-size: 159px 137px;
-  background-repeat: no-repeat;
-  background-position: -131px -102px;
-}
-
-.main__secition-shop-home {
+.home-title {
   text-decoration: none;
   color: black;
   font-weight: bold;
   margin-left: 120px;
 }
 
-.main__section-shop-list-box {
+.shop-list-wrap {
   display: flex;
   margin-top: 18px;
   padding: 0 20px 1px;
@@ -258,64 +233,61 @@
   box-sizing: border-box;
 }
 
-.main__section-shop-left {
-  margin-right: 20px;
-  width: 520px;
-  height: 375px;
-  box-sizing: border-box;
-}
-
-.main__section-shop-right {
+.shop-box2 {
   padding-left: 21px;
   width: 252.45px;
   height: 375px;
   box-sizing: border-box;
 }
 
-.main__section-shop-left-box {
-  display: block;
+.shop-list-main-box {
   display: flex;
   width: 520px;
-  height: 189px;
+  height: 190px;
   box-sizing: border-box;
   text-decoration: none;
   color: black;
+  flex-wrap: wrap;
 }
 
-.main__section-shop-left-item {
+.shop-box {
+  margin-right: 20px;
+  width: 520px;
+  height: 375px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-box {
   width: 160px;
   height: 189px;
-  padding-bottom: 24px;
   box-sizing: border-box;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*flex 내부에 아이템들 중앙 정렬*/
 }
 
-.main__section-shop-left-item--other {
-  margin-left: 20px;
-}
-
-.main__section-shop-left-item-img-box {
+.content-img {
   width: 160px;
   height: 115px;
-}
-
-.main__section-shop-left-item-img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
-.main__section-shop-left-item-des {
-  width: 160px;
-  height: 38px;
+.shopping-content {
   font-size: 14px;
-  max-height: 38px;
   line-height: 19px;
   overflow: hidden;
-  text-overflow: ellipsis;
   box-sizing: border-box;
+  font-weight: bold;
 }
 
-.main__section-shop-right-deal-box {
+.price {
+  color: red;
+  margin-right: 3px;
+}
+.shop-title-box {
   display: flex;
   width: 232px;
   height: 40px;
@@ -327,18 +299,14 @@
   box-sizing: border-box;
 }
 
-.main__section-shop-right-deal {
+.shop-box2-title {
   margin-right: 2.1px;
   font-weight: bold;
   color: #101010;
   text-decoration: none;
 }
 
-.main__section-shop-right-deal-des {
-  color: #606060;
-}
-
-.main__section-shop-right-box {
+.item-box-wrap {
   display: block;
   width: 232px;
   height: 300px;
@@ -347,56 +315,44 @@
   color: black;
 }
 
-.main__section-shop-right-item-box {
+#box2 {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 12px;
   width: 232px;
   height: 92px;
   box-sizing: border-box;
+  justify-content: left;
 }
 
-.main__section-shop-right-item-img-box {
+.content-img {
+  width: 160px;
+  height: 115px;
+  object-fit: cover;
+}
+#box2-image {
   width: 92px;
   height: 92px;
+  display: block;
 }
 
-.main__section-shop-right-item-img {
+.shop-box2-item-img {
   width: 100%;
   height: 100%;
 }
 
-.main__section-shop-right-item-des-box {
+#box2-content {
   margin-left: 15px;
   width: 125.5px;
   height: 61px;
 }
 
-.main__section-shop-right-item-des {
-  width: 122px;
-  height: 38px;
-  overflow: hidden;
-  max-height: 38px;
-  line-height: 19px;
-  text-overflow: ellipsis;
-  font-size: 13px;
-}
-
-.main__section-shop-right-item-price {
-  margin-top: 4px;
-  width: 122px;
-  height: 19px;
-  box-sizing: border-box;
-  color: red;
-  font-weight: bold;
-  font-size: 13px;
-}
-
-.main__section-hobby-box {
+#hobby {
   height: 761px;
 }
 
-.main__section-hobby-container {
+.hobby-list-wrap {
   display: block;
   padding: 0 20px;
   width: 830px;
