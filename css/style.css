@@ -3,6 +3,7 @@
 @import "./aside.css";
 @import "./main.css";
 @import "./footer.css";
+@import "./test.css";
 
 .wrap {
   min-width: 1340px;

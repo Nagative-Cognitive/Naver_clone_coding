@@ -41,9 +41,9 @@
           <!-- 뉴스 박스 -->
           <div class="main-box" id="news">
             <div class="main-category" >
-              <a href="#" class="main-title">뉴스스탠드</a>
+              <a href="#" class="main-title" id="news-stend" data-hello="first">뉴스스탠드</a>
               <span class="se-bar" id="se-circle"></span>
-              <a href="#" class="main-title">언론사편집</a>
+              <a href="#" class="main-title" id="news-edit">언론사편집</a>
               <span class="se-bar"></span>
               <a href="#" class="main-title">엔터</a>
               <span class="se-bar"></span>
@@ -68,8 +68,15 @@
             <div class="news-box" id="first">
               <div class="news-list"></div>
             </div>
-            <div class="news-box" id="second" hidden>
-              <div class="news-list" id="second-list"></div>
+            <div class="news-box" id="second">
+              <div class="news-list" id="second-list">asdfasdfasdfasdfasdfasd <span>hello</span></div>
+              asdfasdfasdfasdfasdfasdasdf
+              asdfasdfasdfasdfasdfasdasdfsdaf
+              dsaf
+              asdfasdfasdfasdfasdfasd<div><div>asdfasdfsdaf</div></div>
+            </div>
+            <div id="third">
+              hello world
             </div>
             <div class="carousel">
               <div class="carousel-indicator"></div>
@@ -727,17 +734,18 @@
     {name:"웹툰", link:"https://webtoon.naver.com"},
     {name:"기타", link:"https://etc.naver.com"},
   ]
-    const container = document.querySelector(".shortcuticonwrap");
+  const container = document.querySelector(".shortcuticonwrap");
 
-    menus.forEach((menu,index)=>{
-      const a=document.createElement("a")
-      a.id = `sc-${index}`;
-      a.href=menu.link;
+  // menu를 도는 반복문
+  menus.forEach((menu, index)=>{
+      const a=document.createElement("a") // <a></a>
+      a.id = `sc-${index}`; // <a id="sc-1"> </a>
+      a.href=menu.link;// <a id="sc-1" href ="~~.com"> </a>
     
-      const span= document.createElement("span");
-      span.textContent = menu.name;
+      const span= document.createElement("span"); // <span> </span>
+      span.textContent = menu.name; // <span> menuname </span>
 
-      a.appendChild(span);
+      a.appendChild(span); // <a id="sc-1" href ="~~.com"><span> menuname </span></a>
       container.appendChild(a);
   });
 
@@ -800,50 +808,87 @@
   //main-new-list를 불러옴//
   const newsContainer =document.querySelector(".news-list")
 
-  
-  newsImage.forEach((src,index)=>{
+  // newsImage 갯수만큼 foreach - 순차 반복 
+  newsImage.forEach((abc, index)=>{
     //div를 생성함//
-    const newsItem = document.createElement("a");
+    const newsItem = document.createElement("a"); // <a> </a>
     //class명을 만들어줘서 css랑 연결되게 함//
-    newsItem.className="main-news-item";
+    newsItem.className="main-news-item"; // <a classname="main-news-item"> </a>
 
     //img 태그를 만듬//
-    const newsImg=document.createElement("img");
+    const newsImg=document.createElement("img"); // <img />
     //이미지 경로를 만들어줌//
-    newsImg.src= src;
+    newsImg.src= abc; // <img src=""/>
     //이미지 마다 
     newsImg.alt=`ni-${index}`;
     //class명을 만들어줘서 css랑 연결되게 함//
     newsImg.className="main-news-image";
 
-    newsItem.appendChild(newsImg);
-    newsContainer.appendChild(newsItem);
+    newsItem.appendChild(newsImg); // <a><img src, art, classname /></a>
+    newsContainer.appendChild(newsItem);// newsContainer> <a><img src, art, classname /></a> </newsContainer
 
     // if(bum){
     //   document.
     // };
 
   });
-    // 눌렀을때 기존꺼가 이걸로 변경
-    // 똑같이 두번 이상 눌렀을때 중복으로 배열이 쌓이지않게
-    // 
-  //1.이벤트를 받음(click 이벤트)
-  const bum = document.getElementById("ex1").addEventListener("click",()=>{
-    const secondNewsBox =document.getElementById("second")
 
-    newsImage2.forEach((src,index)=>{
-      const newsItem2 = document.createElement("a");
-      newsItem2.className="main-news-item";
-      const newsImg=document.createElement("img");
-      newsImg.src= src;
-      newsImg.alt=`ni2-${index}`;
 
-       newsImage2.className="main-news-image";
-
-       newsItem2.appendChild(newsImg);
-       newsContainer.appendChild(newsItem2);
-      console.log(newsContainer.appendChild(newsItem2));
-      
-  })});
+  // 눌렀을때 기존꺼가 이걸로 변경
+  // 똑같이 두번 이상 눌렀을때 중복으로 배열이 쌓이지않게
   
+  //1.이벤트를 받음(click 이벤트)
+  // const bum = document.getElementById("ex1").addEventListener("click",()=>{
+  //   const secondNewsBox =document.getElementById("second")
+
+  //   newsImage2.forEach((src, index)=>{
+  //     const newsItem2 = document.createElement("a"); // <a> </a>
+  //     newsItem2.className="main-news-item"; // <a classname> </a>
+
+  //     const newsImg=document.createElement("img"); // <img/>
+  //     newsImg.src= src;  // <img/>
+  //     newsImg.alt=`ni2-${index}`;  // <img/>
+
+  //     newsItem2.appendChild(newsImg);// <a classname> <img/> </a>
+  //     newsContainer.appendChild(newsItem2); //container> <a classname> <img/> </a> </container
+  // })});
+
+  
+
+  // answer
+    // const bum = document.getElementById("ex1").addEventListener("click",()=>{
+    //   const secondNewsBox =document.getElementById("second")
+
+    //   newsImage2.forEach(it => {
+    //     secondNewsBox.innerHTML += `
+    //       <a classname="main-news-item">
+    //         <img src='${it}' />
+    //       </a>
+    //     `
+    //   });
+    // });
+
+    const newsStend = document.querySelector('#news-stend');
+    const newsEdit = document.querySelector('#news-edit');
+    const first = document.querySelector('#first')
+    const second = document.querySelector('#second')
+    const third = document.querySelector('#third')
+
+    // 이벤트 리스너 등록
+    newsStend.addEventListener('click', () => {
+      // css 수정 (first, third는 display none, second block)
+      first.style.display = 'none';
+      second.style.display = 'inline-block';
+      third.style.display = 'none';
+    })
+
+    // 이벤트 리스너 등록
+    newsEdit.addEventListener('click', () => {
+      // css 수정 (first, third는 display none, second block)
+      first.style.display = 'none';
+      second.style.display = 'none';
+      third.style.display = 'inline-block';
+    })
+    
+
   </script>
