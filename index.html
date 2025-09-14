@@ -57,7 +57,7 @@
               <div class="info-box">
                 <div class="info-content">전체언론사</div>
                 <div class="se-bar"></div>
-                <div class="info-content">연합뉴스</div>
+                <div class="info-content" id="ex1">연합뉴스</div>
                 <div class="se-bar" id="se-circle"></div>
                 <div class="info-content">뭐시꺵이</div>
                  <div class="se-bar"></div>
@@ -65,8 +65,11 @@
                 <div class="se-bar"></div>
                 <div class="info-content">뉴스홈</div>
               </div>
-            <div class="news-box">
+            <div class="news-box" id="first">
               <div class="news-list"></div>
+            </div>
+            <div class="news-box" id="second">
+              <div class="news-list" id="second-list"></div>
             </div>
             <div class="carousel">
               <div class="carousel-indicator"></div>
@@ -79,6 +82,20 @@
               <div class="carousel-indicator"></div>
             </div>
             <!-- 뉴스 박스 끝 -->
+             <!--뉴스 박스 2 -->
+             <div class="news-box">
+              <div class="news-list"></div>
+            </div>
+            <div class="carousel">
+              <div class="carousel-indicator"></div>
+              <div class="carousel-box">
+                <div class="carousel-content"><span id="highright">언론사</span> 더보기</div>
+                <div class="carousel-content">1</div>
+                <div class="se-bar"></div>
+                <div class="carousel-content">4</div>
+              </div>
+              <div class="carousel-indicator"></div>
+            </div>
             <!-- 쇼핑 박스 -->
           </div>
           <div class="main-box" id="shopping">
@@ -94,7 +111,7 @@
             <div class="info-box">
               <a href="#" class="main-title-small">제목</a>
               <span class="se-bar" id="se-circle"></span>
-              <a href="#" class="main-title-small">제목</a>
+              <a href="#" class="main-title-small">제목1</a>
               <span class="se-bar" id="se-circle"></span>
               <a href="#" class="main-title-small">제목 <span class="se-bar" id="se-circle"></span>제목</a>
               <span class="se-bar" id="se-circle"></span>
@@ -765,6 +782,35 @@
     "https://s.pstatic.net/static/newsstand/up/2025/0418/nsd162134806.png",
     "https://s.pstatic.net/static/newsstand/up/2020/0708/nsd94830278.png"
   ]
+
+  const newsImage2 =[
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif",
+    "./응가.gif"
+  ]
   //main-new-list를 불러옴//
   const newsContainer =document.querySelector(".news-list")
 
@@ -782,11 +828,36 @@
     //이미지 마다 
     newsImg.alt=`ni-${index}`;
     //class명을 만들어줘서 css랑 연결되게 함//
-    newsImg.className="main-news-image"
+    newsImg.className="main-news-image";
 
     newsItem.appendChild(newsImg);
     newsContainer.appendChild(newsItem);
 
-  }
-  )
-</script>
+    if(bum){
+      document.
+    }
+
+  });
+    // 눌렀을때 기존꺼가 이걸로 변경
+    // 똑같이 두번 이상 눌렀을때 중복으로 배열이 쌓이지않게
+    // 
+  //1.이벤트를 받음(click 이벤트)
+  const bum = document.getElementById("ex1").addEventListener("click",()=>{
+    const secondNewsBox =document.getElementById("second")
+
+    newsImage2.forEach((src,index)=>{
+      const newsItem2 = document.createElement("a");
+      newsItem2.className="main-news-item";
+      const newsImg=document.createElement("img");
+      newsImg.src= src;
+      newsImg.alt=`ni2-${index}`;
+
+       newsImage2.className="main-news-image";
+
+       newsItem2.appendChild(newsImg);
+       newsContainer.appendChild(newsItem2);
+      console.log(newsContainer.appendChild(newsItem2));
+      
+  })});
+  
+  </script>
