@@ -68,9 +68,9 @@
             <div class="news-box" id="first">
               <div class="news-list"></div>
             </div>
-            <div class="news-box" id="second">
+            <!-- <div class="news-box" id="second">
               <div class="news-list" id="second-list"></div>
-            </div>
+            </div> -->
             <div class="carousel">
               <div class="carousel-indicator"></div>
               <div class="carousel-box">
@@ -83,7 +83,7 @@
             </div>
             <!-- 뉴스 박스 끝 -->
              <!--뉴스 박스 2 -->
-             <div class="news-box">
+             <!-- <div class="news-box">
               <div class="news-list"></div>
             </div>
             <div class="carousel">
@@ -95,7 +95,7 @@
                 <div class="carousel-content">4</div>
               </div>
               <div class="carousel-indicator"></div>
-            </div>
+            </div> -->
             <!-- 쇼핑 박스 -->
           </div>
           <div class="main-box" id="shopping">
@@ -783,34 +783,34 @@
     "https://s.pstatic.net/static/newsstand/up/2020/0708/nsd94830278.png"
   ]
 
-  const newsImage2 =[
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif",
-    "./응가.gif"
-  ]
+  // const newsImage2 =[
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif",
+  //   "./응가.gif"
+  // ]
   //main-new-list를 불러옴//
   const newsContainer =document.querySelector(".news-list")
 
@@ -833,31 +833,31 @@
     newsItem.appendChild(newsImg);
     newsContainer.appendChild(newsItem);
 
-    if(bum){
-      document.
-    }
+    // if(bum){
+    //   document.
+    // }
 
   });
     // 눌렀을때 기존꺼가 이걸로 변경
     // 똑같이 두번 이상 눌렀을때 중복으로 배열이 쌓이지않게
     // 
   //1.이벤트를 받음(click 이벤트)
-  const bum = document.getElementById("ex1").addEventListener("click",()=>{
-    const secondNewsBox =document.getElementById("second")
+  // const bum = document.getElementById("ex1").addEventListener("click",()=>{
+  //   const secondNewsBox =document.getElementById("second")
 
-    newsImage2.forEach((src,index)=>{
-      const newsItem2 = document.createElement("a");
-      newsItem2.className="main-news-item";
-      const newsImg=document.createElement("img");
-      newsImg.src= src;
-      newsImg.alt=`ni2-${index}`;
+  //   newsImage2.forEach((src,index)=>{
+  //     const newsItem2 = document.createElement("a");
+  //     newsItem2.className="main-news-item";
+  //     const newsImg=document.createElement("img");
+  //     newsImg.src= src;
+  //     newsImg.alt=`ni2-${index}`;
 
-       newsImage2.className="main-news-image";
+  //      newsImage2.className="main-news-image";
 
-       newsItem2.appendChild(newsImg);
-       newsContainer.appendChild(newsItem2);
-      console.log(newsContainer.appendChild(newsItem2));
+  //      newsItem2.appendChild(newsImg);
+  //      newsContainer.appendChild(newsItem2);
+  //     console.log(newsContainer.appendChild(newsItem2));
       
-  })});
+  // })});
   
   </script>
